@@ -1,0 +1,93 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "vars";
+
+html {
+    font-size: 13px;
+    @media (max-width: 1000px) {
+        font-size: 11px;
+    }
+    @media (max-width: 570px) {
+        font-size: 10px;
+    }
+}
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Bootstrap */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+/* Blocks */
+
+@import "helpers/container";
+@import "blocks/header";
+@import "blocks/modal";
+@import "blocks/test";
+@import "blocks/products";
+@import "helpers/card";
+@import "blocks/main";
+@import "blocks/footer";
+
+
+a {
+    color: white;
+}
+button:active {
+    outline: none!important;
+}
+
+.header-content:after {
+    content: "";
+    display: block;
+    background: rgba(244,67,54,.8);
+    margin-top: 12px;
+    width: 160px;
+    height: 3px;
+    margin-bottom: 32px;
+}
+.transition--slide {
+    position: relative;
+    overflow: hidden;
+}
+.transition--slide:before {
+    animation: move 500s infinite ease-in-out;
+    margin-left: 60px;
+    content: "";
+    width: 30px;
+    height: 300px;
+    background: hsla(0, 0%, 100%, .5);
+    animation-delay: .05s;
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    animation-name: slideme;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform: rotate(45deg);
+}
+@keyframes slideme {
+    0%{left: -100px}
+    100%{left: 600px}
+}
+.main-button {
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 3px solid #fff;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: .7rem 2.2rem .7rem 2.2rem;
+}
+.main-button:hover {
+    background-color: white;
+    color: #1c7430;
+}

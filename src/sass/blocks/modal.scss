@@ -1,0 +1,84 @@
+#main-modal {
+  a {
+    font-size: 1.6rem;
+  }
+  input {
+    height: 42px;
+    margin-top: 2rem;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+  }
+}
+.modal-main__content {
+  .close {
+    font-size: 3rem;
+  }
+  p:nth-child(2) {
+    margin-top: 2.8rem;
+    font-size: 2.5rem;
+  }
+  p:nth-child(3) {
+    font-size: 2rem;
+  }
+}
+.modal-main__content__form {
+  button {
+    margin-top: 2rem;
+    border: 3px solid #567b5f;
+    background-color: #567b5f;
+    border-radius: 25px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+  }
+  button:hover {
+    background-color: inherit;
+    color: #567b5f;
+  }
+}
+
+.modal-review__content {
+  background-color: #f2faff;
+}
+.modal-review__content__header {
+  h3 {
+    letter-spacing: .2rem;
+    font-weight: normal;
+    padding: 1rem 0rem .3rem 1.2rem;
+  }
+  button {
+    font-size: 2.4rem;
+  }
+}
+.modal-review__content__form {
+  font-size: 1.3rem;
+  input:not(input[type='file']) {
+    font-size: 1.3rem;
+    height: 4rem;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    border-radius: 1rem;
+  }
+  textarea {
+    box-sizing: border-box;
+    outline: none;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+  }
+  button {
+    color: #fff;
+    background-color: #ff1e1e;
+    font-weight: 600;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+  }
+  button:hover {
+    color: white;
+  }
+}

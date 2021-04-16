@@ -1,0 +1,30 @@
+.lightcountdown {
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.lightcountdown__digits {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #6c6c6c;
+}
+
+.lightcountdown__digit {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    color: #505050;
+}
+
+.lightcountdown__delimeter {
+    padding: 0.2em 0.11em 0em 0.11em;
+}
+
+.lightcountdown__text{
+    font-size: 0.5em;
+    font-weight: 600;
+    text-align: center;
+}
